@@ -54,7 +54,7 @@
     "marca": "YoungLA",
     "nombre": "Dark Wave Jogger",
     "color": "Gris",
-    "precio": 1600,
+    "precio": 1300,
     "tallas": ["M"],
     "disponible": false,
     "imagen": "img/YOUNGLA/dark-wave-jogger.jpg"
@@ -114,7 +114,7 @@
     "marca": "YoungLA",
     "nombre": "Throwback Baggy Jogger Gris",
     "color": "Gris",
-    "precio": 1600,
+    "precio": 1150,
     "tallas": ["L"],
     "disponible": true,
     "imagen": "img/YOUNGLA/throwback-baggy-jogger-gris.jpg"
@@ -124,7 +124,7 @@
     "marca": "YoungLA",
     "nombre": "White Dragon Sweats",
     "color": "Blanco",
-    "precio": 1700,
+    "precio": 1500,
     "tallas": ["S"],
     "disponible": false,
     "imagen": "img/YOUNGLA/white-dragon-sweats.jpg"
