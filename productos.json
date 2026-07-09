@@ -1,32 +1,132 @@
 [
   {
     "id": 1,
-    "marca": "Gymshark",
-    "nombre": "Arrival Oversized Tee",
+    "marca": "YoungLA",
+    "nombre": "Batman Compression",
     "color": "Negro",
-    "precio": 899,
-    "tallas": ["S","M","L","XL"],
+    "precio": 1400,
+    "tallas": ["S"],
     "disponible": true,
-    "imagen": "https://placehold.co/600x750/1a1a1a/ffffff?text=Arrival+Tee"
+    "imagen": "img/YOUNGLA/batman-compression.jpg"
   },
   {
     "id": 2,
     "marca": "YoungLA",
-    "nombre": "Batman Compression",
+    "nombre": "Batman Long Sleeve",
     "color": "Negro",
-    "precio": 1300,
-    "tallas": ["M","L","XL"],
-    "disponible": true,
-    "imagen": "https://placehold.co/600x750/1a1a1a/ffffff?text=Batman+Compression"
+    "precio": 1400,
+    "tallas": ["S"],
+    "disponible": false,
+    "imagen": "img/YOUNGLA/batman-long-sleeve.jpg"
   },
   {
     "id": 3,
     "marca": "YoungLA",
+    "nombre": "Batman Stealth Hoodie",
+    "color": "Negro",
+    "precio": 1500,
+    "tallas": ["M"],
+    "disponible": false,
+    "imagen": "img/YOUNGLA/batman-stealth-hoodie.jpg"
+  },
+  {
+    "id": 4,
+    "marca": "YoungLA",
+    "nombre": "Blue Eyes Jersey",
+    "color": "Azul",
+    "precio": 1150,
+    "tallas": ["M", "L"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/blue-eyes-jersey.jpg"
+  },
+  {
+    "id": 5,
+    "marca": "YoungLA",
+    "nombre": "Dark Magician Jersey",
+    "color": "Morado",
+    "precio": 1150,
+    "tallas": ["M"],
+    "disponible": false,
+    "imagen": "img/YOUNGLA/dark-magician-jersey.jpg"
+  },
+  {
+    "id": 6,
+    "marca": "YoungLA",
     "nombre": "Dark Wave Jogger",
     "color": "Gris",
     "precio": 1600,
-    "tallas": ["M","L"],
+    "tallas": ["M"],
     "disponible": false,
-    "imagen": "https://placehold.co/600x750/1a1a1a/ffffff?text=Dark+Wave+Jogger"
+    "imagen": "img/YOUNGLA/dark-wave-jogger.jpg"
+  },
+  {
+    "id": 7,
+    "marca": "YoungLA",
+    "nombre": "Classic Baggy Sweats Black",
+    "color": "Negro",
+    "precio": 1300,
+    "tallas": ["L"],
+    "disponible": false,
+    "imagen": "img/YOUNGLA/classic-baggy-sweats-black.jpg"
+  },
+  {
+    "id": 8,
+    "marca": "YoungLA",
+    "nombre": "Revenge Joggers Deep Teal Wash",
+    "color": "Deep Teal",
+    "precio": 1300,
+    "tallas": ["L"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/revenge-joggers-deep-teal-wash.jpg"
+  },
+  {
+    "id": 9,
+    "marca": "YoungLA",
+    "nombre": "Superman Compression",
+    "color": "Negro",
+    "precio": 1100,
+    "tallas": ["L"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/superman-compression.jpg"
+  },
+  {
+    "id": 10,
+    "marca": "YoungLA",
+    "nombre": "Superman Sweats",
+    "color": "Negro",
+    "precio": 1300,
+    "tallas": ["S", "M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/superman-sweats.jpg"
+  },
+  {
+    "id": 11,
+    "marca": "YoungLA",
+    "nombre": "Supervillain Compression",
+    "color": "Negro",
+    "precio": 1100,
+    "tallas": ["M"],
+    "disponible": false,
+    "imagen": "img/YOUNGLA/supervillain-compression.jpg"
+  },
+  {
+    "id": 12,
+    "marca": "YoungLA",
+    "nombre": "Throwback Baggy Jogger Gris",
+    "color": "Gris",
+    "precio": 1600,
+    "tallas": ["L"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/throwback-baggy-jogger-gris.jpg"
+  },
+  {
+    "id": 13,
+    "marca": "YoungLA",
+    "nombre": "White Dragon Sweats",
+    "color": "Blanco",
+    "precio": 1700,
+    "tallas": ["S"],
+    "disponible": false,
+    "imagen": "img/YOUNGLA/white-dragon-sweats.jpg"
   }
 ]
