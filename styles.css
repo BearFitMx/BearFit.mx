@@ -1,80 +1,111 @@
-/* ===================================================
-   BEAR FIT
-   Version 2.0
-=================================================== */
-
-/* RESET */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-
-scroll-behavior:smooth;
-
-}
-
 body{
+    background:#0d0d0d;
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
+}
 
-background:#0D0D0D;
+.hero{
 
-color:white;
+    min-height:100vh;
 
-font-family:'Montserrat',sans-serif;
+    display:flex;
 
-overflow-x:hidden;
+    align-items:center;
+
+    justify-content:center;
+
+    background:#0d0d0d;
+
+    text-align:center;
+
+    padding-top:90px;
 
 }
 
-/* VARIABLES */
+.text-pink{
 
-:root{
-
---pink:#FF6B9D;
---pinkHover:#ff4c88;
-
---black:#0D0D0D;
---dark:#161616;
-
---gray:#8F8F8F;
-
---white:#FFFFFF;
-
---maxWidth:1400px;
+    color:#FF6B9D;
 
 }
 
-/* LINKS */
+.btn-pink{
 
-a{
+    background:#FF6B9D;
 
-text-decoration:none;
+    color:white;
 
-color:inherit;
+    border-radius:50px;
 
-}
+    padding:14px 40px;
 
-/* IMAGES */
-
-img{
-
-display:block;
-
-max-width:100%;
+    font-weight:600;
 
 }
 
-/* CONTAINER */
+.btn-pink:hover{
 
-.container{
+    background:#ff4c88;
 
-width:90%;
+    color:white;
 
-max-width:var(--maxWidth);
+}
 
-margin:auto;
+.navbar{
+
+    backdrop-filter:blur(12px);
+
+}
+
+.card-product{
+
+    background:#171717;
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.card-product:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card-product img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+}
+
+.card-body{
+
+    padding:20px;
+
+}
+
+.price{
+
+    color:#FF6B9D;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+footer{
+
+    border-top:1px solid #222;
+
+    color:#888;
 
 }
