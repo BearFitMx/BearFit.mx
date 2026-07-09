@@ -1,11 +1,32 @@
 [
   {
     "id": 1,
-    "nombre": "Batman Compression",
+    "marca": "Gymshark",
+    "nombre": "Arrival Oversized Tee",
+    "color": "Negro",
+    "precio": 899,
+    "tallas": ["S","M","L","XL"],
+    "disponible": true,
+    "imagen": "https://placehold.co/600x750/1a1a1a/ffffff?text=Arrival+Tee"
+  },
+  {
+    "id": 2,
     "marca": "YoungLA",
+    "nombre": "Batman Compression",
+    "color": "Negro",
     "precio": 1300,
-    "tallas": ["M", "L", "XL"],
-    "estado": "Disponible",
-    "imagen": "https://placehold.co/600x800/111111/FFFFFF?text=Batman+Compression"
+    "tallas": ["M","L","XL"],
+    "disponible": true,
+    "imagen": "https://placehold.co/600x750/1a1a1a/ffffff?text=Batman+Compression"
+  },
+  {
+    "id": 3,
+    "marca": "YoungLA",
+    "nombre": "Dark Wave Jogger",
+    "color": "Gris",
+    "precio": 1600,
+    "tallas": ["M","L"],
+    "disponible": false,
+    "imagen": "https://placehold.co/600x750/1a1a1a/ffffff?text=Dark+Wave+Jogger"
   }
 ]
