@@ -184,3 +184,41 @@ padding:14px;
 font-weight:700;
 
 }
+/* ===== PRODUCTOS ===== */
+
+.card-product{
+    background:#1b1b1b;
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card-product:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.card-product img{
+    height:330px;
+    object-fit:cover;
+}
+
+.price{
+    color:#ff6b9d;
+    font-weight:700;
+    font-size:1.5rem;
+}
+
+.btn-pink{
+    background:#ff6b9d;
+    color:#fff;
+    border-radius:50px;
+    font-weight:700;
+    border:none;
+}
+
+.btn-pink:hover{
+    background:#ff4f8a;
+    color:#fff;
+}
