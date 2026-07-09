@@ -1,51 +1,41 @@
-fetch("productos.json")
-.then(res => res.json())
-.then(productos => {
+async function cargarProductos(){
+
+const respuesta = await fetch("./productos.json");
+
+const productos = await respuesta.json();
 
 const lista = document.getElementById("product-list");
 
-productos.forEach(producto => {
+lista.innerHTML="";
 
-lista.innerHTML += `
+productos.forEach(producto=>{
+
+lista.innerHTML+=`
 
 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
 
-<div class="card-product">
+<div class="card card-product h-100">
 
-<img src="${producto.imagen}" alt="${producto.nombre}">
+<img src="${producto.imagen}" class="card-img-top">
 
 <div class="card-body">
 
-<h6 class="text-secondary mb-1">
-${producto.marca}
-</h6>
+<h6 class="text-secondary">${producto.marca}</h6>
 
-<h5 class="fw-bold">
-${producto.nombre}
-</h5>
+<h5>${producto.nombre}</h5>
 
-<p class="mb-2">
-Color: ${producto.color}
-</p>
+<p>Color: ${producto.color}</p>
 
-<p class="mb-2">
-Tallas: ${producto.tallas.join(" · ")}
-</p>
+<p>Tallas: ${producto.tallas.join(", ")}</p>
 
-<p class="mb-2">
-${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}
-</p>
+<p>${producto.disponible?"🟢 Disponible":"🔴 Agotado"}</p>
 
-<div class="price mb-3">
-
-$${producto.precio} MXN
-
-</div>
+<h4 class="price">$${producto.precio}</h4>
 
 <a
-class="btn btn-pink w-100"
+href="https://www.instagram.com/bearfit_mx/"
 target="_blank"
-href="https://www.instagram.com/bearfit_mx/">
+class="btn btn-pink w-100 mt-3">
 
 Ver producto
 
@@ -61,4 +51,6 @@ Ver producto
 
 });
 
-});
+}
+
+cargarProductos();
