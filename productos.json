@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "nombre": "Batman Compression",
+    "marca": "YoungLA",
+    "precio": 1300,
+    "tallas": ["M", "L", "XL"],
+    "estado": "Disponible",
+    "imagen": "https://placehold.co/600x800/111111/FFFFFF?text=Batman+Compression"
+  }
+]
