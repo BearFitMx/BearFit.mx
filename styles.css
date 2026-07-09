@@ -100,3 +100,96 @@ nav a:hover{
     color:var(--rosa);
 
 }
+/*================ HERO =================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:140px 20px 80px;
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+    z-index:2;
+
+}
+
+.hero-subtitle{
+
+    color:var(--rosa);
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:82px;
+
+    line-height:85px;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.hero-description{
+
+    color:var(--texto);
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-button{
+
+    display:inline-block;
+
+    background:var(--rosa);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.hero-button:hover{
+
+    background:var(--rosa-hover);
+
+    transform:translateY(-4px);
+
+}
