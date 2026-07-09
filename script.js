@@ -1,17 +1,22 @@
-async function cargarProductos(){
+async function cargarProductos() {
+
+try {
 
 const respuesta = await fetch("./productos.json");
 
+console.log(respuesta);
+
 const productos = await respuesta.json();
+
+console.log(productos);
 
 const lista = document.getElementById("product-list");
 
-lista.innerHTML="";
+lista.innerHTML = "";
 
-productos.forEach(producto=>{
+productos.forEach(producto => {
 
-lista.innerHTML+=`
-
+const card = `
 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
 
 <div class="card card-product h-100">
@@ -28,14 +33,14 @@ lista.innerHTML+=`
 
 <p>Tallas: ${producto.tallas.join(", ")}</p>
 
-<p>${producto.disponible?"🟢 Disponible":"🔴 Agotado"}</p>
+<p>${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}</p>
 
-<h4 class="price">$${producto.precio}</h4>
+<h4 class="price">$${producto.precio} MXN</h4>
 
 <a
 href="https://www.instagram.com/bearfit_mx/"
 target="_blank"
-class="btn btn-pink w-100 mt-3">
+class="btn btn-pink w-100">
 
 Ver producto
 
@@ -46,10 +51,17 @@ Ver producto
 </div>
 
 </div>
-
 `;
 
+lista.insertAdjacentHTML("beforeend", card);
+
 });
+
+} catch (error) {
+
+console.error(error);
+
+}
 
 }
 
