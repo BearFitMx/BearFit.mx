@@ -78,6 +78,16 @@ body{
 
 .card-product img{
 
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+background:#111;
+
+}
+
     width:100%;
 
     aspect-ratio:4/5;
