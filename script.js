@@ -538,9 +538,7 @@ Muchas gracias.`;
             "_blank"
         );
 
-        alert(
-"Instagram se abrió, pero tu navegador no permitió copiar el mensaje automáticamente."
-        );
+        mostrarToast("⚠️ Instagram se abrió, pero tu navegador no permitió copiar el mensaje.");
 
     });
 
