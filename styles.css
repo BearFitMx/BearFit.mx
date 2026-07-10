@@ -370,3 +370,14 @@ text-decoration:line-through;
 opacity:.45;
 
 }
+.filtro-btn.active{
+
+    background:#FF6B9D !important;
+
+    color:#fff !important;
+
+    border-color:#FF6B9D !important;
+
+    box-shadow:0 0 25px rgba(255,107,157,.35);
+
+}
