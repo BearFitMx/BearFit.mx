@@ -110,7 +110,7 @@ function mostrarProductos(lista) {
 
 }
 
-function filtrarProductos(tipo, boton) {
+ffunction filtrarProductos(tipo, boton) {
 
     document.querySelectorAll(".filtro-btn").forEach(btn => {
         btn.classList.remove("active");
@@ -124,19 +124,17 @@ function filtrarProductos(tipo, boton) {
 
         listaFiltrada = productos;
 
-    }
-
-    if (tipo === "disponibles") {
+    } else if (tipo === "disponibles") {
 
         listaFiltrada = productos.filter(p => p.disponible);
 
-  if(tipo==="agotados"){
+    } else if (tipo === "agotados") {
 
-    mostrarProductos(
-        productos.filter(p=>!p.disponible)
-    );
+        listaFiltrada = productos.filter(p => !p.disponible);
 
-}
+    }
+
+    mostrarProductos(listaFiltrada);
 
 }
 
