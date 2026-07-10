@@ -28,7 +28,7 @@
     "nombre": "Batman Stealth Hoodie",
     "color": "Negro",
     "precio": 1500,
-    "tallas": ["M"],
+    "tallas": [""],
     "disponible": false,
     "imagen": "img/YOUNGLA/batman-stealth-hoodie.jpg"
   },
@@ -39,7 +39,7 @@
     "nombre": "Blue Eyes Jersey",
     "color": "Azul",
     "precio": 1150,
-    "tallas": ["M", "L"],
+    "tallas": ["", ""],
     "disponible": false,
     "imagen": "img/YOUNGLA/blue-eyes-jersey.jpg"
   },
@@ -50,7 +50,7 @@
     "nombre": "Dark Magician Jersey",
     "color": "Morado",
     "precio": 1150,
-    "tallas": ["M"],
+    "tallas": [""],
     "disponible": false,
     "imagen": "img/YOUNGLA/dark-magician-jersey.jpg"
   },
@@ -61,7 +61,7 @@
     "nombre": "Dark Wave Jogger",
     "color": "Gris",
     "precio": 1300,
-    "tallas": ["M"],
+    "tallas": [""],
     "disponible": false,
     "imagen": "img/YOUNGLA/dark-wave-jogger.jpg"
   },
@@ -72,7 +72,7 @@
     "nombre": "Classic Baggy Sweats Black",
     "color": "Negro",
     "precio": 1300,
-    "tallas": ["L"],
+    "tallas": [""],
     "disponible": false,
     "imagen": "img/YOUNGLA/classic-baggy-sweats-black.jpg"
   },
@@ -116,7 +116,7 @@
     "nombre": "Supervillain Compression",
     "color": "Negro",
     "precio": 1100,
-    "tallas": ["M"],
+    "tallas": [""],
     "disponible": false,
     "imagen": "img/YOUNGLA/supervillain-compression.jpg"
   },
@@ -138,7 +138,7 @@
     "nombre": "White Dragon Sweats",
     "color": "Blanco",
     "precio": 1500,
-    "tallas": ["S"],
+    "tallas": [""],
     "disponible": false,
     "imagen": "img/YOUNGLA/white-dragon-sweats.jpg"
   },
@@ -149,7 +149,7 @@
   "nombre": "Power Cut-Off Tank Charcoal Core Marl",
   "color": "Charcoal Core Marl",
   "precio": 900,
-  "tallas": ["M"],
+  "tallas": [""],
   "disponible": false,
   "imagen": "img/Gymshark/power-cut-off-tank-charcoal-core-marl.png"
 },
@@ -160,7 +160,7 @@
   "nombre": "Power T Shirt",
   "color": "Negro",
   "precio": 1000,
-  "tallas": ["M"],
+  "tallas": [""],
   "disponible": false,
   "imagen": "img/Gymshark/power-t-shirt.png"
 },
@@ -171,7 +171,7 @@
   "nombre": "American Football Jersey Heavy Blue",
   "color": "Heavy Blue",
   "precio": 899,
-  "tallas": ["L"],
+  "tallas": [""],
   "disponible": false,
   "imagen": "img/Gymshark/american-football-jersey-heavy-blue.png"
 },
