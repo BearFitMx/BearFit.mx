@@ -128,8 +128,7 @@
     "tallas": ["S"],
     "disponible": false,
     "imagen": "img/YOUNGLA/white-dragon-sweats.jpg"
-  }
-]
+  },
 {
   "id": 14,
   "categoria": "hombre",
@@ -163,3 +162,4 @@
   "disponible": true,
   "imagen": "img/Gymshark/american-football-jersey-heavy-blue.png"
 }
+]
