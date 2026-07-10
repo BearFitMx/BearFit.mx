@@ -1,109 +1,136 @@
+let productos = [];
+
 async function cargarProductos() {
 
     try {
 
         const respuesta = await fetch("./productos.json");
-        console.log("Response:", respuesta);
+        productos = await respuesta.json();
 
-        const productos = await respuesta.json();
-        console.log("Productos:", productos);
+        mostrarProductos(productos);
 
-        const listaHombre = document.getElementById("productos-hombre");
-        const listaMujer = document.getElementById("productos-mujer");
+    } catch (error) {
 
-        console.log("DIV Hombre:", listaHombre);
-        console.log("DIV Mujer:", listaMujer);
+        console.error(error);
 
-        if (!listaHombre || !listaMujer) {
-            console.error("No se encontraron los contenedores de productos.");
-            return;
-        }
+    }
 
-        listaHombre.innerHTML = "";
-        listaMujer.innerHTML = "";
+}
 
-        productos.forEach(producto => {
+function mostrarProductos(lista){
 
-            const card = `
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    const listaHombre = document.getElementById("productos-hombre");
+    const listaMujer = document.getElementById("productos-mujer");
 
-                    <div class="card card-product h-100">
+    listaHombre.innerHTML = "";
+    listaMujer.innerHTML = "";
 
-                        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+    lista.forEach(producto=>{
 
-                        <div class="card-body">
+        const card = `
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
 
-                            <h6 class="text-secondary">
-                                ${producto.marca}
-                            </h6>
+            <div class="card card-product h-100">
 
-                            <h5>
-                                ${producto.nombre}
-                            </h5>
+                <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
 
-<p>
-    <strong>Color:</strong> ${producto.color}
-</p>
+                <div class="card-body">
 
-<div class="mt-3">
+                    <h6 class="text-secondary">
+                        ${producto.marca}
+                    </h6>
 
-    <small class="text-secondary">
-        Tallas
-    </small>
+                    <h5>
+                        ${producto.nombre}
+                    </h5>
 
-    <div class="tallas mt-2">
+                    <p>
+                        <strong>Color:</strong> ${producto.color}
+                    </p>
 
-        <span class="${producto.tallas.includes("S") ? "talla-on" : "talla-off"}">S</span>
+                    <div class="mt-3">
 
-        <span class="${producto.tallas.includes("M") ? "talla-on" : "talla-off"}">M</span>
+                        <small class="text-secondary">
+                            Tallas
+                        </small>
 
-        <span class="${producto.tallas.includes("L") ? "talla-on" : "talla-off"}">L</span>
+                        <div class="tallas mt-2">
 
-        <span class="${producto.tallas.includes("XL") ? "talla-on" : "talla-off"}">XL</span>
+                            <span class="${producto.tallas.includes("S") ? "talla-on" : "talla-off"}">S</span>
 
-    </div>
+                            <span class="${producto.tallas.includes("M") ? "talla-on" : "talla-off"}">M</span>
 
-</div>
+                            <span class="${producto.tallas.includes("L") ? "talla-on" : "talla-off"}">L</span>
 
-<p class="mt-3">
-
-    ${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}
-
-</p>
-
-<h4 class="price">
-
-    $${producto.precio} MXN
-
-</h4>
-
-<a
-href="https://www.instagram.com/bearfit_mx/"
-target="_blank"
-class="btn btn-pink w-100">
-
-Pedir por DM
-
-</a>
+                            <span class="${producto.tallas.includes("XL") ? "talla-on" : "talla-off"}">XL</span>
 
                         </div>
 
                     </div>
 
+                    <p class="mt-3">
+
+                        ${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}
+
+                    </p>
+
+                    <h4 class="price">
+
+                        $${producto.precio} MXN
+
+                    </h4>
+
+                    <a
+                    href="https://www.instagram.com/bearfit_mx/"
+                    target="_blank"
+                    class="btn btn-pink w-100">
+
+                    Pedir por DM
+
+                    </a>
+
                 </div>
-            `;
 
-            if (producto.categoria === "mujer") {
-                listaMujer.insertAdjacentHTML("beforeend", card);
-            } else {
-                listaHombre.insertAdjacentHTML("beforeend", card);
-            }
+            </div>
 
-        });
+        </div>
+        `;
 
-    } catch (error) {
+        if(producto.categoria==="mujer"){
 
-        console.error("ERROR:", error);
+            listaMujer.insertAdjacentHTML("beforeend",card);
+
+        }else{
+
+            listaHombre.insertAdjacentHTML("beforeend",card);
+
+        }
+
+    });
+
+}
+
+function filtrarProductos(tipo){
+
+    if(tipo==="todos"){
+
+        mostrarProductos(productos);
+
+    }
+
+    if(tipo==="disponibles"){
+
+        mostrarProductos(
+            productos.filter(p=>p.disponible)
+        );
+
+    }
+
+    if(tipo==="agotados"){
+
+        mostrarProductos(
+            productos.filter(p=>!p.disponible)
+        );
 
     }
 
