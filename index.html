@@ -123,7 +123,6 @@
 </div>
 
 <div class="row" id="productos-hombre"></div>
-<div class="row" id="productos-hombre">
 
 </div>
 
@@ -140,7 +139,24 @@
 Mujer
 
 </h2>
+<div class="text-center mb-5">
 
+    <button class="btn btn-pink filtro-btn active"
+        onclick="filtrarProductos('todos', this)">
+        Todos
+    </button>
+
+    <button class="btn btn-outline-light filtro-btn"
+        onclick="filtrarProductos('disponibles', this)">
+        Disponibles
+    </button>
+
+    <button class="btn btn-outline-light filtro-btn"
+        onclick="filtrarProductos('agotados', this)">
+        Agotados
+    </button>
+
+</div>
 <div class="row" id="productos-mujer">
 
 </div>
