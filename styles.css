@@ -169,23 +169,36 @@ section h2{
 
     height:100%;
 
+    cursor:pointer;
+
 }
 
 .card-product:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-12px) scale(1.03);
 
-    box-shadow:0 20px 40px rgba(255,107,157,.15);
+    box-shadow:0 25px 60px rgba(255,107,157,.25);
 
 }
 
 .card-product img{
 
     width:100%;
-
     height:360px;
-
     object-fit:cover;
+    transition:.45s;
+
+}
+
+.card-product:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.card-product:active{
+
+    transform:scale(.98);
 
 }
 
