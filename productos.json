@@ -130,3 +130,36 @@
     "imagen": "img/YOUNGLA/white-dragon-sweats.jpg"
   }
 ]
+{
+  "id": 14,
+  "categoria": "hombre",
+  "marca": "Gymshark",
+  "nombre": "Power Cut-Off Tank Charcoal Core Marl",
+  "color": "Charcoal Core Marl",
+  "precio": 900,
+  "tallas": ["M"],
+  "disponible": true,
+  "imagen": "img/Gymshark/power-cut-off-tank-charcoal-core-marl.png"
+},
+{
+  "id": 15,
+  "categoria": "hombre",
+  "marca": "Gymshark",
+  "nombre": "Power T Shirt",
+  "color": "Negro",
+  "precio": 1000,
+  "tallas": ["M"],
+  "disponible": true,
+  "imagen": "img/Gymshark/power-t-shirt.png"
+},
+{
+  "id": 16,
+  "categoria": "hombre",
+  "marca": "Gymshark",
+  "nombre": "American Football Jersey Heavy Blue",
+  "color": "Heavy Blue",
+  "precio": 899,
+  "tallas": ["L"],
+  "disponible": true,
+  "imagen": "img/Gymshark/american-football-jersey-heavy-blue.png"
+}
