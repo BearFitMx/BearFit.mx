@@ -25,14 +25,12 @@
 
 <div class="container">
 
-<a class="navbar-brand" href="#">
-   <img src="img/logo.png" alt="Bear Fit" style="height:70px;">
+<a class="navbar-brand" href="#inicio">
+    <img src="img/logo.png" alt="Bear Fit" style="height:70px;">
 </a>
 
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-
-<span class="navbar-toggler-icon"></span>
-
+    <span class="navbar-toggler-icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
@@ -40,23 +38,25 @@
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item">
-<a class="nav-link" href="#inicio">Inicio</a>
+    <a class="nav-link" href="#inicio">Inicio</a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#hombre">Hombre</a>
+    <a class="nav-link" href="#hombre">Hombre</a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#mujer">Mujer</a>
+    <a class="nav-link" href="#mujer">Mujer</a>
 </li>
+
 <li class="nav-item">
     <a class="nav-link"
        href="https://www.instagram.com/bearfit_mx/"
        target="_blank">
         Instagram
-     </a>
-    </li>
+    </a>
+</li>
+
 </ul>
 
 </div>
@@ -65,35 +65,39 @@
 
 </nav>
 
+<!-- HERO -->
+
 <section id="inicio" class="hero">
 
 <video class="hero-video" autoplay muted loop playsinline>
     <source src="videos/hero2.mp4" type="video/mp4">
 </video>
 
-    <div class="hero-overlay"></div>
+<div class="hero-overlay"></div>
 
-    <div class="container hero-content text-center">
+<div class="container hero-content text-center">
 
-        <h5 class="text-uppercase text-pink mb-3">
-            Performance Apparel
-        </h5>
+    <h5 class="text-uppercase text-pink mb-3">
+        Performance Apparel
+    </h5>
 
-        <h1 class="display-1 fw-bold">
-            STRONG<br>TOGETHER
-        </h1>
+    <h1 class="display-1 fw-bold">
+        STRONG<br>TOGETHER
+    </h1>
 
-        <p class="lead mt-4">
-            Las mejores prendas de Gymshark, YoungLA y más.
-        </p>
+    <p class="lead mt-4">
+        Las mejores prendas de Gymshark, YoungLA y más.
+    </p>
 
-        <a href="#hombre" class="btn btn-pink btn-lg mt-3">
-            Ver productos
-        </a>
+    <a href="#hombre" class="btn btn-pink btn-lg mt-3">
+        Ver productos
+    </a>
 
-    </div>
+</div>
 
 </section>
+
+<!-- HOMBRE -->
 
 <section id="hombre" class="py-5">
 
@@ -103,42 +107,6 @@
     Hombre
 </h2>
 
-<div class="text-center mb-5">
-
-    <button class="btn btn-pink filtro-btn active"
-    onclick="filtrarProductos('todos', this)">
-        Todos
-    </button>
-
-    <button class="btn btn-outline-light filtro-btn"
-    onclick="filtrarProductos('disponibles', this)">
-        Disponibles
-    </button>
-
-    <button class="btn btn-outline-light filtro-btn"
-    onclick="filtrarProductos('agotados', this)">
-        Agotados
-    </button>
-
-</div>
-
-<div class="row" id="productos-hombre"></div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="mujer" class="py-5">
-
-<div class="container">
-
-<h2 class="text-center mb-5">
-
-Mujer
-
-</h2>
 <div class="text-center mb-5">
 
     <button class="btn btn-pink filtro-btn active"
@@ -157,9 +125,24 @@ Mujer
     </button>
 
 </div>
-<div class="row" id="productos-mujer">
+
+<div class="row" id="productos-hombre"></div>
 
 </div>
+
+</section>
+
+<!-- MUJER -->
+
+<section id="mujer" class="py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+    Mujer
+</h2>
+
+<div class="row" id="productos-mujer"></div>
 
 </div>
 
@@ -172,7 +155,6 @@ Bear Fit © 2026
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <script src="script.js"></script>
 
 </body>
