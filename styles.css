@@ -56,26 +56,28 @@ body{
     justify-content:center;
     align-items:center;
     overflow:hidden;
+    isolation:isolate;
 }
 
 .hero-video{
     position:absolute;
-    top:0;
-    left:0;
+    inset:0;
     width:100%;
     height:100%;
     object-fit:cover;
-    z-index:-2;
+    z-index:0;
 }
 
 .hero-overlay{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.55);
-    z-index:-1;
+    z-index:1;
 }
 
 .hero-content{
+    position:relative;
+    z-index:2;
     text-align:center;
     max-width:900px;
     padding:20px;
