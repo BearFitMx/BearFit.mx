@@ -240,5 +240,93 @@
     "tallas": ["M"],
     "disponible": true,
     "imagen": "img/Gymshark/legacy-leggings-deep-petrol-blue.png"
+},
+{
+    "id": 23,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "Revenge Tees",
+    "color": "",
+    "precio": 999,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/revenge-tees.jpg"
+},
+{
+    "id": 24,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "Bane Tees",
+    "color": "",
+    "precio": 999,
+    "tallas": ["L"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/bane-tees.jpg"
+},
+{
+    "id": 25,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "Classic Baggy Sweat Grey",
+    "color": "Grey",
+    "precio": 1300,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/classic-baggy-sweat-grey.jpg"
+},
+{
+    "id": 26,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "Looney Tunes Cut Off",
+    "color": "",
+    "precio": 1100,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/looney-tunes-cut-off.jpg"
+},
+{
+    "id": 27,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "Looney Tunes Sweat",
+    "color": "",
+    "precio": 1400,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/looney-tunes-sweat.jpg"
+},
+{
+    "id": 28,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "One Punch Man Tees",
+    "color": "",
+    "precio": 1100,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/one-punch-man-tees.jpg"
+},
+{
+    "id": 29,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "Warrior X Compression Black Red",
+    "color": "Black / Red",
+    "precio": 1100,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/warrior-x-compression-black-red.jpg"
+},
+{
+    "id": 30,
+    "categoria": "proximamente",
+    "marca": "YoungLA",
+    "nombre": "Batman Compression Black",
+    "color": "Black",
+    "precio": 1300,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/YOUNGLA/batman-compression-black.jpg"
 }
 ]
