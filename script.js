@@ -110,7 +110,7 @@ function mostrarProductos(lista) {
 
 }
 
-ffunction filtrarProductos(tipo, boton) {
+function filtrarProductos(tipo, boton) {
 
     document.querySelectorAll(".filtro-btn").forEach(btn => {
         btn.classList.remove("active");
