@@ -189,9 +189,12 @@ section h2{
 
 }
 
-.card-body{
-
-    padding:22px;
+.card-body h5{
+    color:#ffffff;
+    font-size:1.55rem;
+    font-weight:800;
+    line-height:1.25;
+    margin:12px 0 18px;;
 
 }
 
