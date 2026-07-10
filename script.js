@@ -1,67 +1,84 @@
 async function cargarProductos() {
 
-try {
+    try {
 
-const respuesta = await fetch("./productos.json");
+        const respuesta = await fetch("./productos.json");
+        const productos = await respuesta.json();
 
-console.log(respuesta);
+        const listaHombre = document.getElementById("productos-hombre");
+        const listaMujer = document.getElementById("productos-mujer");
 
-const productos = await respuesta.json();
+        listaHombre.innerHTML = "";
+        listaMujer.innerHTML = "";
 
-console.log(productos);
+        productos.forEach(producto => {
 
-const lista = document.getElementById("product-list");
+            const card = `
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
 
-lista.innerHTML = "";
+                    <div class="card card-product h-100">
 
-productos.forEach(producto => {
+                        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
 
-const card = `
-<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card-body">
 
-<div class="card card-product h-100">
+                            <h6 class="text-secondary">
+                                ${producto.marca}
+                            </h6>
 
-<img src="${producto.imagen}" class="card-img-top">
+                            <h5>
+                                ${producto.nombre}
+                            </h5>
 
-<div class="card-body">
+                            <p>
+                                Color: ${producto.color}
+                            </p>
 
-<h6 class="text-secondary">${producto.marca}</h6>
+                            <p>
+                                Tallas: ${producto.tallas.join(", ")}
+                            </p>
 
-<h5>${producto.nombre}</h5>
+                            <p>
+                                ${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}
+                            </p>
 
-<p>Color: ${producto.color}</p>
+                            <h4 class="price">
+                                $${producto.precio} MXN
+                            </h4>
 
-<p>Tallas: ${producto.tallas.join(", ")}</p>
+                            <a
+                                href="https://www.instagram.com/bearfit_mx/"
+                                target="_blank"
+                                class="btn btn-pink w-100">
 
-<p>${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}</p>
+                                Ver producto
 
-<h4 class="price">$${producto.precio} MXN</h4>
+                            </a>
 
-<a
-href="https://www.instagram.com/bearfit_mx/"
-target="_blank"
-class="btn btn-pink w-100">
+                        </div>
 
-Ver producto
+                    </div>
 
-</a>
+                </div>
+            `;
 
-</div>
+            if (producto.categoria === "mujer") {
 
-</div>
+                listaMujer.insertAdjacentHTML("beforeend", card);
 
-</div>
-`;
+            } else {
 
-lista.insertAdjacentHTML("beforeend", card);
+                listaHombre.insertAdjacentHTML("beforeend", card);
 
-});
+            }
 
-} catch (error) {
+        });
 
-console.error(error);
+    } catch (error) {
 
-}
+        console.error(error);
+
+    }
 
 }
 
