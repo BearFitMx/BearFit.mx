@@ -41,30 +41,50 @@ async function cargarProductos() {
                                 ${producto.nombre}
                             </h5>
 
-                            <p>
-                                Color: ${producto.color}
-                            </p>
+<p>
+    <strong>Color:</strong> ${producto.color}
+</p>
 
-                            <p>
-                                Tallas: ${producto.tallas.join(", ")}
-                            </p>
+<div class="mt-3">
 
-                            <p>
-                                ${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}
-                            </p>
+    <small class="text-secondary">
+        Tallas
+    </small>
 
-                            <h4 class="price">
-                                $${producto.precio} MXN
-                            </h4>
+    <div class="tallas mt-2">
 
-                            <a
-                                href="https://www.instagram.com/bearfit_mx/"
-                                target="_blank"
-                                class="btn btn-pink w-100">
+        <span class="${producto.tallas.includes("S") ? "talla-on" : "talla-off"}">S</span>
 
-                                Ver producto
+        <span class="${producto.tallas.includes("M") ? "talla-on" : "talla-off"}">M</span>
 
-                            </a>
+        <span class="${producto.tallas.includes("L") ? "talla-on" : "talla-off"}">L</span>
+
+        <span class="${producto.tallas.includes("XL") ? "talla-on" : "talla-off"}">XL</span>
+
+    </div>
+
+</div>
+
+<p class="mt-3">
+
+    ${producto.disponible ? "🟢 Disponible" : "🔴 Agotado"}
+
+</p>
+
+<h4 class="price">
+
+    $${producto.precio} MXN
+
+</h4>
+
+<a
+href="https://www.instagram.com/bearfit_mx/"
+target="_blank"
+class="btn btn-pink w-100">
+
+Pedir por DM
+
+</a>
 
                         </div>
 
