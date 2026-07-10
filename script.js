@@ -3,10 +3,21 @@ async function cargarProductos() {
     try {
 
         const respuesta = await fetch("./productos.json");
+        console.log("Response:", respuesta);
+
         const productos = await respuesta.json();
+        console.log("Productos:", productos);
 
         const listaHombre = document.getElementById("productos-hombre");
         const listaMujer = document.getElementById("productos-mujer");
+
+        console.log("DIV Hombre:", listaHombre);
+        console.log("DIV Mujer:", listaMujer);
+
+        if (!listaHombre || !listaMujer) {
+            console.error("No se encontraron los contenedores de productos.");
+            return;
+        }
 
         listaHombre.innerHTML = "";
         listaMujer.innerHTML = "";
@@ -63,23 +74,19 @@ async function cargarProductos() {
             `;
 
             if (producto.categoria === "mujer") {
-
                 listaMujer.insertAdjacentHTML("beforeend", card);
-
             } else {
-
                 listaHombre.insertAdjacentHTML("beforeend", card);
-
             }
 
         });
 
     } catch (error) {
 
-        console.error(error);
+        console.error("ERROR:", error);
 
     }
 
 }
 
-cargarProductos();
+document.addEventListener("DOMContentLoaded", cargarProductos);
