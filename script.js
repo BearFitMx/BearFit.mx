@@ -50,18 +50,13 @@ function mostrarProductos(lista) {
 
                     <div class="mt-3">
 
-                        <small class="text-secondary">
-                            Tallas
-                        </small>
+                        <small class="text-secondary">Tallas</small>
 
                         <div class="tallas mt-2">
 
                             <span class="${producto.tallas.includes("S") ? "talla-on" : "talla-off"}">S</span>
-
                             <span class="${producto.tallas.includes("M") ? "talla-on" : "talla-off"}">M</span>
-
                             <span class="${producto.tallas.includes("L") ? "talla-on" : "talla-off"}">L</span>
-
                             <span class="${producto.tallas.includes("XL") ? "talla-on" : "talla-off"}">XL</span>
 
                         </div>
@@ -80,10 +75,9 @@ function mostrarProductos(lista) {
 
                     </h4>
 
-                    <a
-                        href="https://www.instagram.com/bearfit_mx/"
-                        target="_blank"
-                        class="btn btn-pink w-100">
+                    <a href="https://www.instagram.com/bearfit_mx/"
+                       target="_blank"
+                       class="btn btn-pink w-100">
 
                         Pedir por DM
 
@@ -112,13 +106,18 @@ function mostrarProductos(lista) {
 
 function filtrarProductos(tipo, boton) {
 
+    // Cambia el botón activo
     document.querySelectorAll(".filtro-btn").forEach(btn => {
         btn.classList.remove("active");
+        btn.classList.remove("btn-pink");
+        btn.classList.add("btn-outline-light");
     });
 
+    boton.classList.remove("btn-outline-light");
+    boton.classList.add("btn-pink");
     boton.classList.add("active");
 
-    let listaFiltrada = [];
+    let listaFiltrada;
 
     if (tipo === "todos") {
 
@@ -128,7 +127,7 @@ function filtrarProductos(tipo, boton) {
 
         listaFiltrada = productos.filter(p => p.disponible);
 
-    } else if (tipo === "agotados") {
+    } else {
 
         listaFiltrada = productos.filter(p => !p.disponible);
 
