@@ -11,13 +11,13 @@ async function cargarProductos() {
 
     } catch (error) {
 
-        console.error(error);
+        console.error("Error cargando productos:", error);
 
     }
 
 }
 
-function mostrarProductos(lista){
+function mostrarProductos(lista) {
 
     const listaHombre = document.getElementById("productos-hombre");
     const listaMujer = document.getElementById("productos-mujer");
@@ -25,7 +25,7 @@ function mostrarProductos(lista){
     listaHombre.innerHTML = "";
     listaMujer.innerHTML = "";
 
-    lista.forEach(producto=>{
+    lista.forEach(producto => {
 
         const card = `
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -81,11 +81,11 @@ function mostrarProductos(lista){
                     </h4>
 
                     <a
-                    href="https://www.instagram.com/bearfit_mx/"
-                    target="_blank"
-                    class="btn btn-pink w-100">
+                        href="https://www.instagram.com/bearfit_mx/"
+                        target="_blank"
+                        class="btn btn-pink w-100">
 
-                    Pedir por DM
+                        Pedir por DM
 
                     </a>
 
@@ -96,13 +96,13 @@ function mostrarProductos(lista){
         </div>
         `;
 
-        if(producto.categoria==="mujer"){
+        if (producto.categoria === "mujer") {
 
-            listaMujer.insertAdjacentHTML("beforeend",card);
+            listaMujer.insertAdjacentHTML("beforeend", card);
 
-        }else{
+        } else {
 
-            listaHombre.insertAdjacentHTML("beforeend",card);
+            listaHombre.insertAdjacentHTML("beforeend", card);
 
         }
 
@@ -110,34 +110,36 @@ function mostrarProductos(lista){
 
 }
 
-function filtrarProductos(tipo, boton){
+function filtrarProductos(tipo, boton) {
 
-    document.querySelectorAll(".filtro-btn").forEach(btn=>{
+    document.querySelectorAll(".filtro-btn").forEach(btn => {
         btn.classList.remove("active");
     });
 
     boton.classList.add("active");
 
-    if(tipo==="todos"){
+    let listaFiltrada = [];
 
-        mostrarProductos(productos);
+    if (tipo === "todos") {
 
-    }
-
-    if(tipo==="disponibles"){
-
-        mostrarProductos(
-            productos.filter(p=>p.disponible)
-        );
+        listaFiltrada = productos;
 
     }
 
-    if(tipo==="agotados"){
+    if (tipo === "disponibles") {
 
-        mostrarProductos(
-            productos.filter(p=>!p.disponible)
-        );
+        listaFiltrada = productos.filter(p => p.disponible);
 
     }
+
+    if (tipo === "agotados") {
+
+        listaFiltrada = productos.filter(p => !p.disponible);
+
+    }
+
+    mostrarProductos(listaFiltrada);
+
+}
 
 document.addEventListener("DOMContentLoaded", cargarProductos);
