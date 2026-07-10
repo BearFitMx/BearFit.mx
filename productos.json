@@ -161,5 +161,71 @@
   "tallas": ["L"],
   "disponible": true,
   "imagen": "img/Gymshark/american-football-jersey-heavy-blue.png"
+},
+{
+  "id": 17,
+  "categoria": "mujer",
+  "marca": "Gymshark",
+  "nombre": "Minimal Halterneck Sports Bra",
+  "color": "Negro",
+  "precio": 699,
+  "tallas": ["S"],
+  "disponible": true,
+  "imagen": "img/Gymshark/minimal-halterneck-sports-bra.png"
+},
+{
+  "id": 18,
+  "categoria": "mujer",
+  "marca": "Gymshark",
+  "nombre": "Vital Soft Shorts",
+  "color": "Negro",
+  "precio": 999,
+  "tallas": ["S"],
+  "disponible": true,
+  "imagen": "img/Gymshark/vital-soft-shorts.png"
+},
+{
+  "id": 19,
+  "categoria": "mujer",
+  "marca": "Gymshark",
+  "nombre": "Everyday Seamless Shorts",
+  "color": "Negro",
+  "precio": 899,
+  "tallas": ["M"],
+  "disponible": true,
+  "imagen": "img/Gymshark/everyday-seamless-shorts.png"
+},
+{
+  "id": 20,
+  "categoria": "mujer",
+  "marca": "Gymshark",
+  "nombre": "Collegiate Graphic T-Shirt",
+  "color": "Negro",
+  "precio": 699,
+  "tallas": ["L"],
+  "disponible": true,
+  "imagen": "img/Gymshark/collegiate-graphic-t-shirt.png"
+},
+{
+  "id": 21,
+  "categoria": "mujer",
+  "marca": "Gymshark",
+  "nombre": "Legacy Regular Leggings",
+  "color": "Negro",
+  "precio": 1299,
+  "tallas": ["S"],
+  "disponible": true,
+  "imagen": "img/Gymshark/legacy-regular-leggings.png"
+},
+{
+  "id": 22,
+  "categoria": "mujer",
+  "marca": "Gymshark",
+  "nombre": "Legacy Leggings - Deep Petrol Blue",
+  "color": "Deep Petrol Blue",
+  "precio": 1399,
+  "tallas": ["M"],
+  "disponible": true,
+  "imagen": "img/Gymshark/legacy-leggings-deep-petrol-blue.png"
+],
 }
-]
