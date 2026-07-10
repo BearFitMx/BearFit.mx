@@ -99,11 +99,28 @@
 
 <div class="container">
 
-<h2 class="text-center mb-5">
-
-Hombre
-
+<h2 class="text-center mb-4">
+    Hombre
 </h2>
+
+<div class="text-center mb-5">
+
+    <button class="btn btn-pink filtro-btn active"
+            onclick="filtrarProductos('todos')">
+        Todos
+    </button>
+
+    <button class="btn btn-outline-light filtro-btn"
+            onclick="filtrarProductos('disponibles')">
+        Disponibles
+    </button>
+
+    <button class="btn btn-outline-light filtro-btn"
+            onclick="filtrarProductos('agotados')">
+        Agotados
+    </button>
+
+</div>
 
 <div class="row" id="productos-hombre">
 
