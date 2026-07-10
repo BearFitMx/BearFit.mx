@@ -218,14 +218,15 @@
   "imagen": "img/Gymshark/legacy-regular-leggings.png"
 },
 {
-  "id": 22,
-  "categoria": "mujer",
-  "marca": "Gymshark",
-  "nombre": "Legacy Leggings - Deep Petrol Blue",
-  "color": "Deep Petrol Blue",
-  "precio": 1399,
-  "tallas": ["M"],
-  "disponible": true,
-  "imagen": "img/Gymshark/legacy-leggings-deep-petrol-blue.png"
+    "id": 22,
+    "categoria": "mujer",
+    "marca": "Gymshark",
+    "nombre": "Legacy Leggings - Deep Petrol Blue",
+    "color": "Deep Petrol Blue",
+    "precio": 1399,
+    "tallas": ["M"],
+    "disponible": true,
+    "imagen": "img/Gymshark/legacy-leggings-deep-petrol-blue.png"
 }
+]
 
