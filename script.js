@@ -110,7 +110,13 @@ function mostrarProductos(lista){
 
 }
 
-function filtrarProductos(tipo){
+function filtrarProductos(tipo, boton){
+
+    document.querySelectorAll(".filtro-btn").forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+    boton.classList.add("active");
 
     if(tipo==="todos"){
 
@@ -133,7 +139,5 @@ function filtrarProductos(tipo){
         );
 
     }
-
-}
 
 document.addEventListener("DOMContentLoaded", cargarProductos);
