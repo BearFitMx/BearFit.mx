@@ -7,7 +7,7 @@
     "color": "Negro",
     "precio": 1400,
     "tallas": ["S"],
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/YOUNGLA/batman-compression.jpg"
   },
   {
@@ -18,7 +18,7 @@
     "color": "Negro",
     "precio": 1400,
     "tallas": ["S"],
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/YOUNGLA/batman-long-sleeve.jpg"
   },
   {
@@ -40,7 +40,7 @@
     "color": "Azul",
     "precio": 1150,
     "tallas": ["M", "L"],
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/YOUNGLA/blue-eyes-jersey.jpg"
   },
   {
@@ -150,7 +150,7 @@
   "color": "Charcoal Core Marl",
   "precio": 900,
   "tallas": ["M"],
-  "disponible": true,
+  "disponible": false,
   "imagen": "img/Gymshark/power-cut-off-tank-charcoal-core-marl.png"
 },
 {
@@ -161,7 +161,7 @@
   "color": "Negro",
   "precio": 1000,
   "tallas": ["M"],
-  "disponible": true,
+  "disponible": false,
   "imagen": "img/Gymshark/power-t-shirt.png"
 },
 {
@@ -172,7 +172,7 @@
   "color": "Heavy Blue",
   "precio": 899,
   "tallas": ["L"],
-  "disponible": true,
+  "disponible": false,
   "imagen": "img/Gymshark/american-football-jersey-heavy-blue.png"
 },
 {
