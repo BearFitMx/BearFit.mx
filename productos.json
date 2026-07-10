@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Batman Compression",
     "color": "Negro",
@@ -11,6 +12,7 @@
   },
   {
     "id": 2,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Batman Long Sleeve",
     "color": "Negro",
@@ -21,6 +23,7 @@
   },
   {
     "id": 3,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Batman Stealth Hoodie",
     "color": "Negro",
@@ -31,6 +34,7 @@
   },
   {
     "id": 4,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Blue Eyes Jersey",
     "color": "Azul",
@@ -41,6 +45,7 @@
   },
   {
     "id": 5,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Dark Magician Jersey",
     "color": "Morado",
@@ -51,6 +56,7 @@
   },
   {
     "id": 6,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Dark Wave Jogger",
     "color": "Gris",
@@ -61,6 +67,7 @@
   },
   {
     "id": 7,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Classic Baggy Sweats Black",
     "color": "Negro",
@@ -71,6 +78,7 @@
   },
   {
     "id": 8,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Revenge Joggers Deep Teal Wash",
     "color": "Deep Teal",
@@ -81,6 +89,7 @@
   },
   {
     "id": 9,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Superman Compression",
     "color": "Negro",
@@ -91,6 +100,7 @@
   },
   {
     "id": 10,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Superman Sweats",
     "color": "Negro",
@@ -101,6 +111,7 @@
   },
   {
     "id": 11,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Supervillain Compression",
     "color": "Negro",
@@ -111,6 +122,7 @@
   },
   {
     "id": 12,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Throwback Baggy Jogger Gris",
     "color": "Gris",
@@ -121,6 +133,7 @@
   },
   {
     "id": 13,
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "White Dragon Sweats",
     "color": "Blanco",
