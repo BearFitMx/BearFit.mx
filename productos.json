@@ -218,6 +218,7 @@
   "imagen": "img/Gymshark/legacy-regular-leggings.png"
 },
 {
+{
   "id": 22,
   "categoria": "mujer",
   "marca": "Gymshark",
@@ -227,7 +228,5 @@
   "tallas": ["M"],
   "disponible": true,
   "imagen": "img/Gymshark/legacy-leggings-deep-petrol-blue.png"
-},
-{
+}
 ]
-
