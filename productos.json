@@ -6,7 +6,7 @@
     "nombre": "Batman Compression",
     "color": "Negro",
     "precio": 1400,
-    "tallas": ["S"],
+    "tallas": [""],
     "disponible": false,
     "imagen": "img/YOUNGLA/batman-compression.jpg"
   },
