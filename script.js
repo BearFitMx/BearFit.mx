@@ -130,15 +130,13 @@ function filtrarProductos(tipo, boton) {
 
         listaFiltrada = productos.filter(p => p.disponible);
 
-    }
+  if(tipo==="agotados"){
 
-    if (tipo === "agotados") {
+    mostrarProductos(
+        productos.filter(p=>!p.disponible)
+    );
 
-        listaFiltrada = productos.filter(p => !p.disponible);
-
-    }
-
-    mostrarProductos(listaFiltrada);
+}
 
 }
 
