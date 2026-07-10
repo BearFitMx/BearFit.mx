@@ -506,25 +506,39 @@ Me gustaría comprar los siguientes productos:
 
 Muchas gracias.`;
 
-    const url =
+    navigator.clipboard.writeText(mensaje)
+    .then(() => {
 
-`https://www.instagram.com/direct/new/`;
-
-    window.open(url, "_blank");
-
-    setTimeout(() => {
-
-        navigator.clipboard.writeText(mensaje);
+        window.open(
+            "https://www.instagram.com/bearfit_mx/",
+            "_blank"
+        );
 
         alert(
+`✅ ¡Mensaje copiado!
 
-`Se abrió Instagram.
+Ahora solo:
 
-El mensaje ya fue copiado al portapapeles.
+1. Abre el chat con Bear Fit.
+2. Mantén presionado.
+3. Pega el mensaje.
 
-Solo pégalo en el chat de Bear Fit.`);
+¡Así de fácil! 🐻`
+        );
 
-    }, 1200);
+    })
+    .catch(() => {
+
+        window.open(
+            "https://www.instagram.com/bearfit_mx/",
+            "_blank"
+        );
+
+        alert(
+"Instagram se abrió, pero tu navegador no permitió copiar el mensaje automáticamente."
+        );
+
+    });
 
 }
 // ==========================
