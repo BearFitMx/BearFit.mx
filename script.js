@@ -464,7 +464,22 @@ function cerrarCarrito() {
 // ==========================
 // COMPRAR POR DM
 // ==========================
+function mostrarToast(texto) {
 
+    const toast = document.getElementById("toast");
+    const toastTexto = document.getElementById("toast-text");
+
+    toastTexto.textContent = texto;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 3000);
+
+}
 function comprarPorDM() {
 
     if (carrito.length === 0) {
@@ -514,18 +529,7 @@ Muchas gracias.`;
             "_blank"
         );
 
-        alert(
-`✅ ¡Mensaje copiado!
-
-Ahora solo:
-
-1. Abre el chat con Bear Fit.
-2. Mantén presionado.
-3. Pega el mensaje.
-
-¡Así de fácil! 🐻`
-        );
-
+        mostrarToast("✅ Mensaje copiado. Solo pégalo en el chat de Bear Fit.");
     })
     .catch(() => {
 
