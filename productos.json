@@ -84,7 +84,7 @@
     "color": "Deep Teal",
     "precio": 1300,
     "tallas": ["L"],
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/YOUNGLA/revenge-joggers-deep-teal-wash.jpg"
   },
   {
