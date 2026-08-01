@@ -7,7 +7,7 @@
     "color": "Negro",
     "precio": 1400,
     "tallas": [""],
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/YOUNGLA/batman-compression.jpg"
   },
   {
@@ -161,7 +161,7 @@
   "color": "Negro",
   "precio": 1000,
   "tallas": [""],
-  "disponible": false,
+  "disponible": true,
   "imagen": "img/Gymshark/power-t-shirt.png"
 },
 {
@@ -172,7 +172,7 @@
   "color": "Heavy Blue",
   "precio": 899,
   "tallas": [""],
-  "disponible": false,
+  "disponible": true,
   "imagen": "img/Gymshark/american-football-jersey-heavy-blue.png"
 },
 {
@@ -181,7 +181,7 @@
   "marca": "Gymshark",
   "nombre": "Minimal Halterneck Sports Bra",
   "color": "Negro",
-  "precio": 699,
+  "precio": 600,
   "tallas": ["S"],
   "disponible": true,
   "imagen": "img/Gymshark/minimal-halterneck-sports-bra.png"
@@ -192,7 +192,7 @@
   "marca": "Gymshark",
   "nombre": "Vital Soft Shorts",
   "color": "Negro",
-  "precio": 999,
+  "precio": 600,
   "tallas": ["S"],
   "disponible": true,
   "imagen": "img/Gymshark/vital-soft-shorts.png"
@@ -203,7 +203,7 @@
   "marca": "Gymshark",
   "nombre": "Everyday Seamless Shorts",
   "color": "Negro",
-  "precio": 899,
+  "precio": 700,
   "tallas": ["M"],
   "disponible": true,
   "imagen": "img/Gymshark/everyday-seamless-shorts.png"
@@ -214,7 +214,7 @@
   "marca": "Gymshark",
   "nombre": "Collegiate Graphic T-Shirt",
   "color": "Negro",
-  "precio": 699,
+  "precio": 800,
   "tallas": ["L"],
   "disponible": true,
   "imagen": "img/Gymshark/collegiate-graphic-t-shirt.png"
@@ -225,7 +225,7 @@
   "marca": "Gymshark",
   "nombre": "Legacy Regular Leggings",
   "color": "Negro",
-  "precio": 1299,
+  "precio": 800,
   "tallas": ["S"],
   "disponible": true,
   "imagen": "img/Gymshark/legacy-regular-leggings.png"
@@ -236,25 +236,25 @@
     "marca": "Gymshark",
     "nombre": "Legacy Leggings - Deep Petrol Blue",
     "color": "Deep Petrol Blue",
-    "precio": 1399,
+    "precio": 800,
     "tallas": ["M"],
     "disponible": true,
     "imagen": "img/Gymshark/legacy-leggings-deep-petrol-blue.png"
 },
 {
     "id": 23,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Revenge Tees",
     "color": "",
     "precio": 999,
     "tallas": ["M"],
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/YOUNGLA/revenge-tees.jpg"
 },
 {
     "id": 24,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Bane Tees",
     "color": "",
@@ -265,7 +265,7 @@
 },
 {
     "id": 25,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Classic Baggy Sweat Grey",
     "color": "Grey",
@@ -276,40 +276,40 @@
 },
 {
     "id": 26,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Looney Tunes Cut Off",
     "color": "",
     "precio": 1100,
     "tallas": ["M"],
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/YOUNGLA/looney-tunes-cut-off.jpg"
 },
 {
     "id": 27,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Looney Tunes Sweat",
     "color": "",
     "precio": 1400,
     "tallas": ["M"],
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/YOUNGLA/looney-tunes-sweat.jpg"
 },
 {
     "id": 28,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "One Punch Man Tees",
     "color": "",
     "precio": 1100,
     "tallas": ["M"],
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/YOUNGLA/one-punch-man-tees.jpg"
 },
 {
     "id": 29,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Warrior X Compression Black Red",
     "color": "Black / Red",
@@ -320,7 +320,7 @@
 },
 {
     "id": 30,
-    "categoria": "proximamente",
+    "categoria": "hombre",
     "marca": "YoungLA",
     "nombre": "Batman Compression Black",
     "color": "Black",
